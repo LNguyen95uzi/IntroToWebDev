@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Name: Long Nguyen
+Date Created: 1/25/2022
+Most recent revision: created on 1/25-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+        <header style="text-align: center;">
+            <h1>Butcher's Bank</h1>
+          </header>
+          <hr>
+      
+          <nav>
+              <p display: inline><a href="index.html">Home</a> |
+              <a href="menu.html">Menu</a> |
+              <a href="contact.html">Contact Us</a></p>
+          </nav>
+          <hr>
+
+          <div style="text-align: center;"
+          <form action="submit.html" method="POST">
+            <label for="firstName">First Name:</label> 
+            <input type="text" id="firstName" name="firstName" /> <br />
+            <br>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /> <br />
+            <br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" /> <br />
+            <br>
+      
+            <label for="inquiry">Reason for Inquiry:</label>
+            <select id="inquiry" name="inquiry">
+              <option value="default" selected>Catering</option>
+              <option value="private">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select> <br>
+            <br>
+      
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info"></textarea>
+            <br>
+            <br>
+            
+            <legend>Have you been to the restaurant?</legend>
+                <input type="radio" id="choice1" name="questionnaire" value="yes" />
+                <label for="choice1">No</label><br />
+                <input type="radio" id="choice2" name="questionnaire" value="no" />
+                <label for="choice2">Yes</label><br />
+              <br>
+
+              <legend>Best days to contact you:</legend>
+              <br />
+              <input type="checkbox" id="monday" name="monday" value="monday" />
+              <label for="monday">M</label>
+              <input type="checkbox" id="tuesday" name="tuesday" value="tuesday" />
+              <label for="tuesday">T</label>
+              <input type="checkbox" id="wednesday" name="wednesday" value="wednesday" />
+              <label for="wednesday">W</label>
+              <input type="checkbox" id="thursday" name="thursday" value="thursday" />
+              <label for="thursday">Th</label>
+              <input type="checkbox" id="friday" name="friday" value="friday" />
+              <label for="friday">F</label>
+      
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit" />
+          </form>
+
+          <footer style="text-align: center;">
+            <hr>
+            <p>211 Main Street, Philadelphia, PA 19107</p>
+            <p>215-111-2222</p>
+            <p>&copy; 2022 Long Nguyen. All rights reserved.</p>
+        </footer>
+        </div>
+
+  </body>
+</html>
