@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Evens</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DISPLAY EVENS</h1>
+      <form
+        name="numberFun"
+        class="needs-validation"
+        onsubmit="return validate();"
+        onreset="resetView();"
+        novalidate
+      >
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="start">Starting Number</label>
+            <input type="number" class="form-control" id="start" required />
+            <div class="invalid-feedback">
+              Starting Number is required and must be a number.
+            </div>
+          </div>
+          <!-- end .form-group -->
+          <div class="form-group col">
+            <label for="end">Ending Number</label>
+            <input type="number" class="form-control" id="end" required />
+            <div class="invalid-feedback">
+              Ending Number is required and must be a number greater than the
+              Starting Number.
+            </div>
+          </div>
+          <!-- end .form-group -->
+          <div class="form-group col">
+              <label for="step">Step</label>
+              <input type="number" class="form-control" id="step" required> 
+              <div class="invalid-feedback">
+                  The step is not a positive number.
+              </div>
+          </div>
+          <!-- end .form-group -->
+        </div>
+        <!-- end .form-row -->
+
+        <div class="form-row">
+            <div class="form-group col">
+                <button type="submit" id="submitButton" class="btn btn-primary" onclick="printEvenNums()">
+                    Display Evens
+                </button>
+            </div>
+        </div>
+        <!-- end .form-row -->
+      </form>
+
+      <table id="results" class="table table-striped" style="display: none">
+        <thead>
+            <tr>
+                <th>Here are the even numbers between <td><span id="start-num"></span></td> and <td><span id="end-num"></span></td></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <!-- end .container -->
+    <script src="display-evens.js"></script>
+  </body>
+</html>
