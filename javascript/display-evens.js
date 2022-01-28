@@ -1,41 +1,37 @@
-let numberFun = document.forms["numberFun"];
-let start = document.getElementById("start");
-let end = document.getElementById("end");
-let step = document.getElementById("step");
-let results = document.getElementById("results");
-let submitButton = document.getElementById("submitButton");
+var startNum = document.getElementById("start");
+var endNum = document.getElementById("end");
+var stepNum = document.getElementById("step");
+var displayResults = document.getElementById("results");
+var submitBtn = document.getElementById("submitButton");
 
 function validate() {
+  // Removes any validation styles activated by prev validation
   numberFun.className = "needs-validation";
-
+  contentString = "";
+  // if returns false, one or more form inputs are invalid, if so we add was-validated class to the form and exit function
+  // checkValidity adds validation pseudo classes to each invalid element
   if (!numberFun.checkValidity()) {
     numberFun.className = "was-validated";
     return false;
   }
+var startInput = parseInt(startNum.value);
+console.log(typeof(startInput));
+console.log(startInput);
+var endInput = parseInt(endNum.value);
+var stepInput = parseInt(stepNum.value);
+  if (startInput && endInput) {
+    // So long as we have a start & end value
+    if (!stepInput) stepInput = 2;
+    // If we don't have an increment, count by 2s
+    contentString += "<p>The values between " + startInput + " and " + endInput + " in increments of " + stepInput + ":</p><ul>";
+      for(i = startInput; i <= endInput; i += stepInput) {
+        contentString += "<li>" + i + "</li>";
+      }
+      contentString += "</ul";
 
-  return false;
+      submitBtn.innerHTML = contentString;
+  }
 }
 
-// function printEvenNums() {
-//   //get the start and end range from user
-//   var start = parseInt(document.getElementById("start").value);
-//   var end = parseInt(document.getElementById("end").value);
-//   var evenNums = "<br>Even Numbers:<br>";
+validate();
 
-//   for (i = start; i <= end; i++) {
-//     // let's divide the value by 2
-//     // if the reminder is zero then it's an Even number
-//     if (i % 2 == 0) {
-//       evenNums += i + "<br>";
-//     }
-//   }
-//   //print the values
-//   document.getElementById("result").innerHTML = evenNums;
-// }
-
-function resetView() {
-  numberFun.className = "needs-validation";
-  results.style.display = "none";
-  submitButton.innerText = "Calculate";
-  start.focus();
-}
