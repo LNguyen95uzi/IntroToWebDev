@@ -54,7 +54,7 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 // The function should NOT alter either parameter.
 // Write your code here:
 function subtractArray(a, b) {
-  return [...new Set([...a, ...b])].toString();
+  return a.filter((item) => !b.includes(item)).toString();
 }
 
 // Uncomment the code below to verify your function is working.
