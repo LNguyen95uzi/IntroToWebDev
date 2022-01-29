@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 100px;
+    padding: 5%;
+    margin: 2%;
+    background-color: dimgray;
+}
+
+nav {
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(93, 92, 92);
+    color: cornsilk;
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    min-height: 10vh;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: darkslategray;
+  }

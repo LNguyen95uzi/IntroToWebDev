@@ -3,85 +3,105 @@
 Date Created: 1/25/2022
 Most recent revision: created on 1/25-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-  </head>
-  <body>
-        <header style="text-align: center;">
-            <h1>Butcher's Bank</h1>
-          </header>
-          <hr>
-      
-          <nav>
-              <p display: inline><a href="index.html">Home</a> |
-              <a href="menu.html">Menu</a> |
-              <a href="contact.html">Contact Us</a></p>
-          </nav>
-          <hr>
 
-          <div style="text-align: center;"
-          <form action="submit.html" method="POST">
-            <label for="firstName">First Name:</label> 
-            <input type="text" id="firstName" name="firstName" /> <br />
-            <br>
-      
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" /> <br />
-            <br>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Contact Us</title>
+</head>
 
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" /> <br />
-            <br>
-      
-            <label for="inquiry">Reason for Inquiry:</label>
-            <select id="inquiry" name="inquiry">
-              <option value="default" selected>Catering</option>
-              <option value="private">Private Party</option>
-              <option value="feedback">Feedback</option>
-              <option value="other">Other</option>
-            </select> <br>
-            <br>
-      
-            <label for="info">Additional Information</label>
-            <textarea id="info" name="info"></textarea>
-            <br>
-            <br>
-            
-            <legend>Have you been to the restaurant?</legend>
-                <input type="radio" id="choice1" name="questionnaire" value="yes" />
-                <label for="choice1">No</label><br />
-                <input type="radio" id="choice2" name="questionnaire" value="no" />
-                <label for="choice2">Yes</label><br />
-              <br>
+<body>
+  <main>
+    <div class="header">
+      <header>
+        <h1>Butcher's Bank</h1>
+      </header>
+    </div>
+    <hr>
 
-              <legend>Best days to contact you:</legend>
-              <br />
-              <input type="checkbox" id="monday" name="monday" value="monday" />
-              <label for="monday">M</label>
-              <input type="checkbox" id="tuesday" name="tuesday" value="tuesday" />
-              <label for="tuesday">T</label>
-              <input type="checkbox" id="wednesday" name="wednesday" value="wednesday" />
-              <label for="wednesday">W</label>
-              <input type="checkbox" id="thursday" name="thursday" value="thursday" />
-              <label for="thursday">Th</label>
-              <input type="checkbox" id="friday" name="friday" value="friday" />
-              <label for="friday">F</label>
-      
-            <br>
-            <br>
-            <input type="submit" name="submit" value="Submit" />
-          </form>
+    <nav>
+      <p display: inline><a href="index.html">Home</a> |
+        <a href="menu.html">Menu</a> |
+        <a href="contact.html">Contact Us</a>
+      </p>
+    </nav>
+    <hr>
 
-          <footer style="text-align: center;">
-            <hr>
-            <p>211 Main Street, Philadelphia, PA 19107</p>
-            <p>215-111-2222</p>
-            <p>&copy; 2022 Long Nguyen. All rights reserved.</p>
-        </footer>
+    <div style="text-align: center;" <form action="submit.html" method="POST">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" /> <br />
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /> <br />
+      <br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" /> <br />
+      <br>
+
+      <label for="inquiry">Reason for Inquiry:</label>
+      <select id="inquiry" name="inquiry">
+        <option value="default" selected>Catering</option>
+        <option value="private">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select> <br>
+      <br>
+
+      <label for="info">Additional Information</label>
+      <textarea id="info" name="info"></textarea>
+      <br>
+      <br>
+
+      <legend>Have you been to the restaurant?</legend>
+      <input type="radio" id="choice1" name="questionnaire" value="yes" />
+      <label for="choice1">No</label><br />
+      <input type="radio" id="choice2" name="questionnaire" value="no" />
+      <label for="choice2">Yes</label><br />
+      <br>
+
+      <legend>Best days to contact you:</legend>
+      <br />
+      <input type="checkbox" id="monday" name="monday" value="monday" />
+      <label for="monday">M</label>
+      <input type="checkbox" id="tuesday" name="tuesday" value="tuesday" />
+      <label for="tuesday">T</label>
+      <input type="checkbox" id="wednesday" name="wednesday" value="wednesday" />
+      <label for="wednesday">W</label>
+      <input type="checkbox" id="thursday" name="thursday" value="thursday" />
+      <label for="thursday">Th</label>
+      <input type="checkbox" id="friday" name="friday" value="friday" />
+      <label for="friday">F</label>
+
+      <br>
+      <br>
+      <input type="submit" name="submit" value="Submit" />
+      </form>
+
+      <div class="container">
+        <div class="footer">
+          <p>211 Main Street, Philadelphia, PA 19107</p>
+          <p>215-111-2222</p>
+          <p>&copy; 2022 Long Nguyen. All rights reserved.</p>
         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
 
-  </body>
 </html>

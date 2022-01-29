@@ -3,77 +3,108 @@
 Date Created: 1/25/2022
 Most recent revision: created on 1/25-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-  </head>
-  <body>
-    <header style="text-align: center;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Menu</title>
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <header>
         <h1>Butcher's Bank</h1>
       </header>
-      <hr>
-  
-      <nav>
-          <p display: inline><a href="index.html">Home</a> |
-          <a href="menu.html">Menu</a> |
-          <a href="contact.html">Contact Us</a></p>
-      </nav>
-      <hr>
+    </div>
+    <hr>
 
-      <article id="tomahawk-ribeye">
-        <h2><strong>Tomahawk Ribeye</strong></h2>
-        <p>Our most popular entree!</p>
-        <p>
-            40 oz Dry-aged USDA Prime bone-in ribeye, well marbled for peak flavor. Served with roasted garlic, pickled shallot, tallow
-        </p>
-        <p>$120.99</p>
-      </article>
-      <article id="wagyu">
-        <h2><strong>A5 Japanese Wagyu Filet</strong></h2>
-        <p>Our most exquisite meat selection!</p>
-        <p>
-            8 oz filet from the Miyazaki prefecture. Served with roasted garlic, pickled shallot, tallow
-        </p>
-        <p>$269.99</p>
-      </article>
-      <article id="ny-strip">
-        <h2><strong>American NY Strip</strong></h2>
-        <p>Great choice for leaner beef with great fat on the side.</p>
-        <p>
-            14 oz USDA Prime NY Strip, well marbled for peak flavor. Served with two sides.
-        </p>
-        <p>$89.99</p>
-      </article>
-      <article id="bone-marrow">
-        <h2><strong>Bone Marrow Toast</strong></h2>
-        <p>Signature sharing dish!</p>
-        <p>
-            Roasted with herbs, beef cheek, red wine
-        </p>
-        <p>$29.99</p>
-      </article>
-      <article id="beef-wellington">
-        <h2><strong>Beef Wellington</strong></h2>
-        <p>
-            Served with chive crepe, mushroom, bordelaise
-        </p>
-        <p>$79.99</p>
-      </article>
-      <article id="roast">
-        <h2><strong>12 Hour Prime Rib Roast</strong></h2>
-        <p>
-            16oz served with au jus, horseradish, sea salt
-        </p>
-        <p>$59.99</p>
-      </article>
-      <article id="pork">
-        <h2><strong>Pork Tomahawk</strong></h2>
-        <p>
-            20oz served with peach mustard, fennel pollen
-        </p>
-        <p>$55.99</p>
-      </article>
-  </body>
+    <nav>
+      <p display: inline><a href="index.html">Home</a> |
+        <a href="menu.html">Menu</a> |
+        <a href="contact.html">Contact Us</a>
+      </p>
+    </nav>
+    <hr>
+
+    <article id="tomahawk-ribeye">
+      <h2><strong>Tomahawk Ribeye</strong></h2>
+      <p>Our most popular entree!</p>
+      <p>
+        40 oz Dry-aged USDA Prime bone-in ribeye, well marbled for peak flavor. Served with roasted garlic, pickled
+        shallot, tallow
+      </p>
+      <p>$120.99</p>
+    </article>
+    <article id="wagyu">
+      <h2><strong>A5 Japanese Wagyu Filet</strong></h2>
+      <p>Our most exquisite meat selection!</p>
+      <p>
+        8 oz filet from the Miyazaki prefecture. Served with roasted garlic, pickled shallot, tallow
+      </p>
+      <p>$269.99</p>
+    </article>
+    <article id="ny-strip">
+      <h2><strong>American NY Strip</strong></h2>
+      <p>Great choice for leaner beef with great fat on the side.</p>
+      <p>
+        14 oz USDA Prime NY Strip, well marbled for peak flavor. Served with two sides.
+      </p>
+      <p>$89.99</p>
+    </article>
+    <article id="bone-marrow">
+      <h2><strong>Bone Marrow Toast</strong></h2>
+      <p>Signature sharing dish!</p>
+      <p>
+        Roasted with herbs, beef cheek, red wine
+      </p>
+      <p>$29.99</p>
+    </article>
+    <article id="beef-wellington">
+      <h2><strong>Beef Wellington</strong></h2>
+      <p>
+        Served with chive crepe, mushroom, bordelaise
+      </p>
+      <p>$79.99</p>
+    </article>
+    <article id="roast">
+      <h2><strong>12 Hour Prime Rib Roast</strong></h2>
+      <p>
+        16oz served with au jus, horseradish, sea salt
+      </p>
+      <p>$59.99</p>
+    </article>
+    <article id="pork">
+      <h2><strong>Pork Tomahawk</strong></h2>
+      <p>
+        20oz served with peach mustard, fennel pollen
+      </p>
+      <p>$55.99</p>
+    </article>
+
+    <div class="container">
+      <div class="footer">
+        <p>211 Main Street, Philadelphia, PA 19107</p>
+        <p>215-111-2222</p>
+        <p>&copy; 2022 Long Nguyen. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
